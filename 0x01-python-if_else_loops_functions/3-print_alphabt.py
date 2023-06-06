@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-for ltr in range(97, 123):
-    if chr(ltr) is not 'q' and chr(ltr) is not 'e':
-        print("{}".format(chr(ltr)), end="")
+
+nonprint_letters = ['q', 'e']
+for letter in range(97, 123):
+    if chr(letter) not in nonprint_letters:
+        print("{}".format(chr(letter)), end="")
+
