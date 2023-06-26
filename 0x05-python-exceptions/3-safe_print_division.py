@@ -8,6 +8,7 @@ def safe_print_division(a, b):
         the finally block anyway"""
     except ZeroDivisionError:
         div = None
+    else:
+        return div
     finally:
-        print("inside result: {}".format(div))
-
+        print("Inside result: {}".format(div))
