@@ -2,6 +2,7 @@
 import sys
 
 def safe_function(fct, *args):
+    output = None
     try:
         output = fct(*args)
         return output
