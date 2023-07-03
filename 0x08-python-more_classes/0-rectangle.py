@@ -3,6 +3,6 @@
 
 
 class Reactangle:
-"""empty class about an rectangle"""
+    """empty class about an rectangle"""
 
     pass
