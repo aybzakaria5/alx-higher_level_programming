@@ -122,4 +122,7 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """squere instance"""
-        return (cls(size, size))
+        rect_sq = cls()
+        rect_sq.width = size
+        rect_sq.height = size
+        return rect_sq
