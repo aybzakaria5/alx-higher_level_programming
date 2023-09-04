@@ -1,10 +1,8 @@
-#!usr/bin/python3
-"""a file that descipes a rectangle classs
-"""
+#!/usr/bin/python3
+"""This module defines a Rectangle with it's operactions"""
 
 
 class Rectangle:
-    """a class for a rectangle
-    """
+    """represents a rectangle and it's attributes and methodesZ"""
 
     pass
