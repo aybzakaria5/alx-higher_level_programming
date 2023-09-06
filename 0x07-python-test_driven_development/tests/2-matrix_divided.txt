@@ -1,0 +1,76 @@
+the "matrix_divided" module
+===========================
+
+Using "matrix_divided"
+----------------------
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+all the possible cases:
+-----------------------
+
+Case 1: Empty matrix
+#######################
+Divide an empty matrix by 15:
+    >>> matrix_divided([[]], 2)
+    [[]]
+
+Case 2: Invalid matrix (string case)
+######################################
+divide a string(invalid matrix) by 6:
+    >>> matrix_divided("somematri", 6)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Case 3.1: invalid div (not a number)
+######################################
+devide a matrix by div (not a number):
+    >>> matrix_divided([[3, 4, 5], [2, 7, 8]], "div")
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
+
+Case 3.2: Invalid div (div = 0)
+#################################
+divide a matrix by 0 (non valid)
+    >>> matrix_divided([[1, 1], [5, 5]], 0)
+    Traceback (most recent call last):
+    ...
+    ZeroDivisionError: division by zero
+
+Case 4: Normal case
+#####################
+divide a given matrix by 2
+    >>> matrix_divided([[2, 2], [4, 4]], 2)
+    [[1.0, 1.0], [2.0, 2.0]]
+
+ Case 4.2 : case where div is < 0
+ ##################################
+ divide a matrix by -2
+    >>> matrix_divided([[2, 2], [4, 4]], -2)
+    [[-1.0, -1.0], [-2.0, -2.0]]
+
+Case 5: case where the len of rows is diffrent
+################################################
+divide a matrix by 2:
+    >>> matrix_divided([[2, 2, 5], [3, 5]], 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: Each row of the matrix must have the same size
+
+Case 6: case where the div is float
+######################################
+    >>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3.5)
+    [[0.29, 0.57, 0.86], [1.14, 1.43, 1.71]]
+
+Case 7: case where the matrix has some floats
+##################################################
+    >>> matrix_divided([[1.5, 2.3, 3], [4, 5.8, 6]], 3)
+    [[0.5, 0.77, 1.0], [1.33, 1.93, 2.0]]
+
+Case 8: case where there's a non float/int in the elements of a row
+#####################################################################
+    >>> matrix_divided([[2, "this", 4], [2, 2, 2]], 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
