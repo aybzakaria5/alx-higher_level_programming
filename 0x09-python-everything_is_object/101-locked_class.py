@@ -6,6 +6,6 @@
 
 class LockedClass:
     """preventing the user from creating an
-    instance  
+    instance
     """
     __slots__ = ['first_name']
