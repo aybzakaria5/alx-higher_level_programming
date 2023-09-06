@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """ a locked clss that prevents the usuer
     from dynamically creating an instance
 """
