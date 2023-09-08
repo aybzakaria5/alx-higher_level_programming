@@ -1,0 +1,49 @@
+the 'print_square' module
+===========================
+Imporintg the function:
+-------------------------
+    >>> print_square = __import__('4-print_square').print_square
+
+Case 1 : empty argument
+##########################
+    >>> print_square()
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
+
+Case 2 : the normal case
+#########################
+    >>> print_square(5)
+    #####
+    #####
+    #####
+    #####
+    #####
+
+Case 2 : negative int
+###########################
+    >>> print_square(-5)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be >= 0
+
+Case 4 : float
+##################
+    >>> print_square(5.8)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+Case 5 nigative float
+#######################
+    >>> print_square(-5.2)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be >= 0
+
+Case 6 : string
+#######################
+    >>> print_square("10")
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
