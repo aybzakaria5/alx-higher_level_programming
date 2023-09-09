@@ -17,3 +17,12 @@ Case 2 : the argument is anumber
     ...
     TypeError: text must be a string
 
+Case 3 : (.?:):
+################
+    >>> text_indentation(".?:")
+    .
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    :
+    <BLANKLINE>
