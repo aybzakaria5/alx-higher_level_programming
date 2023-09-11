@@ -29,7 +29,7 @@
 | Task | File |
 | ---- | ---- |
 | 0. Lookup (using the dir() function to return attributes and methodes) | [0-lookup.py](./0-lookup.py) |
-| 1. My list | [1-my_list.py](./1-my_list.py), [tests/1-my_list.txt](./tests/1-my_list.txt) |
+| 1. My list (sorintg the list in order)| [1-my_list.py](./1-my_list.py), [tests/1-my_list.txt](./tests/1-my_list.txt) |
 | 2. Exact same object | [2-is_same_class.py](./2-is_same_class.py) |
 | 3. Same class or inherit from | [3-is_kind_of_class.py](./3-is_kind_of_class.py) |
 | 4. Only sub class of | [4-inherits_from.py](./4-inherits_from.py) |
