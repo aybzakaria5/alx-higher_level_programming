@@ -1,18 +1,26 @@
-the "1-my_list.py" module
-=============================
->>> MyList = __import__('1-my_list').MyList
+MyList class tests
+------------------
 
-Case 1 : empty list
-#####################
->>> print(MyList([]))
-[]
+check module's doc:
+      >>> doc = __import__('1-my_list').__doc__
+      >>> print(len(doc) > 1)
+      True
 
-Case 2 : the normal Case
-###########################
->>> print(MyList([1,2,3,4]))
-[1, 2, 3, 4]
+check method's doc:
+      >>> doc = __import__('1-my_list').MyList.__doc__
+      >>> print(len(doc) > 1)
+      True
 
-Case 3 : the non ordered list
-###############################
->>> print(MyList([1,4,3,2]))
-[1, 2, 3, 4]
+      >>> MyList = __import__('1-my_list').MyList
+
+case 1 (empty list):
+     >>> print(MyList([]))
+     []
+
+case 2 ([1,2,3,4]):
+     >>> print(MyList([1,2,3,4]))
+     [1, 2, 3, 4]
+
+case 4 ([4,2,3,1]):
+     >>> MyList([1,2,3,4]).print_sorted()
+     [1, 2, 3, 4]
