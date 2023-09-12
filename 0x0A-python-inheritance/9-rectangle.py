@@ -38,4 +38,3 @@ class Rectangle(BaseGeometry):
     def __repr__(self):
         """represent the rectangle"""
         print("[Rectangle] {}/{}".format(self.__width, self.__height))
-
