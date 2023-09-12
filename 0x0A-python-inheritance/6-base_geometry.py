@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""a class about geometry"""
+"""currently empty class"""
 
 
 class BaseGeometry:
-    def area(self):
-        """a funciton that checks the area"""
+    """BaseGeometry class"""
 
+    def area(self):
+        """checks the area"""
         raise Exception("area() is not implemented")
