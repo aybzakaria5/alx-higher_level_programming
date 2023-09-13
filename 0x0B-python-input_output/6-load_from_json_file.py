@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''module to create a an object from json file 
+'''module to create a an object from json file
 '''
 
 
