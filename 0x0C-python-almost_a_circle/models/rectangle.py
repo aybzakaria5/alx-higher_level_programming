@@ -57,6 +57,7 @@ class Rectangle(Base):
     def y(self):
         """the x getter"""
         return self.__y
+
     @y.setter
     def y(self, value):
         """setting the y to value"""
