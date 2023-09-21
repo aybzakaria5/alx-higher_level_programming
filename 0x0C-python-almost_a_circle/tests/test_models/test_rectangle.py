@@ -95,8 +95,18 @@ class TestRectangle(unittest.TestCase):
     #x_testing----------------------------------------------------
 
     """tetsting if x is either float or not int"""
+    def test_xisFloat(self):
+        with self.assertRaises(TypeError):
+            rec1 = Rectangle(1, 7, 3.5, 7, 12)
 
+    """testing if c is str"""
+    def test_Xistr(self):
+        with self.assertRaises(TypeError):
+            rec2 = Rectangle(1, 4, "x", 7, 1)
 
-
-if __name__ == "__main__":
-    unittest.main()
+    """testing is x is less than 0"""
+    def test_Xisless0(self):
+        with self.assertRaises(ValueError):
+            rec1 = Rectangle(1, 5, -3, 7, 12)
+    if __name__ == "__main__":
+        unittest.main()
