@@ -115,8 +115,10 @@ class Rectangle(Base):
 
     def display(self):
         """methode to display w * h rectangle"""
+        for i in range(self.y):
+            print()
         for i in range(self.height):
-            print("#" * self.width)
+            print( " " * self.x + "#" * self.width)
 
     def __str__(self):
         return (
