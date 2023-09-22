@@ -41,3 +41,13 @@ class Base:
                                           for obj in list_objs])
         with open(filepath, 'w') as f:
             f.write(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        ''' returns an instance with all attributes already set '''
+        if cls.__name__ == "Rectangle":
+            dummy = cls(3, 3)
+        if cls.__name__ == "Square":
+            dummy = cls(3)
+        dummy.update(**dictionary)
+        return dummy
