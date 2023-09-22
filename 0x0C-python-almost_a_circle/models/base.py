@@ -24,8 +24,16 @@ class Base:
         else:
             return json.dumps(list_dictionaries)
 
+    @staticmethod
+    def from_json_string(json_string):
+        """deserilize using json"""
+        if json_string is None or json_string == []:
+            return "[]"
+        return json.loads(json_string)
+
     @classmethod
     def save_to_file(cls, list_objs):
+        """serilize using jsong"""
         if list_objs is None:
             list_objs = []
         filepath = "{}.json".format(cls.__name__)
