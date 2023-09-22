@@ -18,8 +18,8 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
 
-        def __str__(self):
-            return (
-                f"[square] ({self.id}) "
-                f"{self.x}/{self.y} - {self.height}"
+    def __str__(self):
+        return (
+            f"[square] ({self.id}) "
+            f"{self.x}/{self.y} - {self.width}"
             )
