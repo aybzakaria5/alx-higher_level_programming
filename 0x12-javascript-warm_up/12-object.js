@@ -1,4 +1,3 @@
-guillaume@ubuntu:~/0x12$ cat 12-object.js
 #!/usr/bin/node
 const myObject = {
   type: 'object',
