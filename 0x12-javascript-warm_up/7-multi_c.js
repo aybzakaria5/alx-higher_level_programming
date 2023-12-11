@@ -2,7 +2,7 @@
 
 const arg = process.argv[2];
 
-if (!isNaN(arg) && parseInt(arg) > 0) {
+if (!isNaN(arg)) {
   const x = parseInt(arg);
 
   for (let i = 0; i < x; i++) {
