@@ -1,3 +1,3 @@
 #!/usr/bin/node
 const arg = process.argv[2];
-console.log(arg ? arg : 'No argument');
+console.log(arg || 'No argument');
