@@ -16,7 +16,7 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     # Define the query
-    query = query = (
+    query = (
         "SELECT * "
         "FROM states "
         "WHERE SUBSTRING(name, 1, 1) = 'N' "
