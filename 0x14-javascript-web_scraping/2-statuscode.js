@@ -11,7 +11,7 @@ if (process.argv.length !== 3) {
 
 request.get(url, (error, response) => {
   if (response) {
-    console.log('code: ', response.statusCode);
+    console.log(`code: ${response.statusCode}`);
   } else {
     console.log(error);
   }
