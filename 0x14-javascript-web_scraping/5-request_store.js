@@ -5,7 +5,7 @@ const request = require('request');
 const fs = require('fs');
 const URL = process.argv[2];
 const fileName = process.argv[3];
-if (process.argv.length !== 3) {
+if (process.argv.length !== 4) {
   console.log('Usage : <./script.js> <url> <filename>');
   process.exit(1);
 }
