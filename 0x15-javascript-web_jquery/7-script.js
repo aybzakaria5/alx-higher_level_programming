@@ -3,7 +3,7 @@ $.ajax({
     method: 'GET',
     datatype: 'json',
     success: (data) => {
-        $('DIV#character').text(data.name)
+        $('DIV#character').text(data.name);
         // $(br).addClass('height');
         // $('.height').text(data.height);
         // this two lines above just to test if the height is being printed
